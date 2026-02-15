@@ -3,62 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enterprise Installer</title>
+<title>App Installer</title>
 
 <style>
 body {
     margin: 0;
-    background: #f2f2f7;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+    background: linear-gradient(180deg, #f9f9fb 0%, #ececf1 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 40px 20px;
 }
 
 .container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 28px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    background: white;
+    padding: 50px 40px;
+    border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 520px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
 
 h1 {
+    margin-bottom: 35px;
+    font-size: 24px;
     font-weight: 600;
-    font-size: 22px;
-    margin-bottom: 30px;
     color: #1c1c1e;
 }
 
 .grid {
     display: grid;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
 }
 
 .install-btn {
     display: block;
-    padding: 14px;
-    border-radius: 14px;
-    background: #007aff;
+    padding: 16px 0;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0a84ff, #0066ff);
     color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    transition: 0.15s ease;
+    transition: all 0.15s ease;
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.25);
+}
+
+.install-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 122, 255, 0.35);
 }
 
 .install-btn:active {
-    background: #005ecb;
-    transform: scale(0.98);
+    transform: scale(0.97);
+    box-shadow: 0 6px 14px rgba(0, 122, 255, 0.25);
 }
 
 .footer {
-    margin-top: 25px;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 13px;
     color: #8e8e93;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
@@ -69,20 +83,20 @@ h1 {
     <h1>App Installation</h1>
 
     <div class="grid">
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Commission.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Etisalat.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Forevermark.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/PowerChina.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Qingdao.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Railway.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Takeoff.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Telecom.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Tianjin.plist">Install</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Wasu.plist">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
+        <a class="install-btn" href="#">Install</a>
     </div>
 
     <div class="footer">
-        Internal Distribution
+        Enterprise Distribution
     </div>
 </div>
 
