@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App Installer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 15px;
+            background: #00aaff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        a.button:hover {
+            background: #0088cc;
+        }
+
+        .warning {
+            margin-bottom: 30px;
+            color: #ff5555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>App Installation Page</h1>
+
+<p class="warning">
+    Only install apps from trusted sources. Make sure you understand what you are installing.
+</p>
+
+<div class="container">
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Commission.plist">Install 1</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Etisalat.plist">Install 2</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Forevermark.plist">Install 3</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/PowerChina.plist">Install 4</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Qingdao.plist">Install 5</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Railway.plist">Install 6</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Takeoff.plist">Install 7</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Telecom.plist">Install 8</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Tianjin.plist">Install 9</a>
+    <a class="button" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Wasu.plist">Install 10</a>
+</div>
+
+</body>
+</html>
