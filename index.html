@@ -3,116 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronix Enterprise Installer</title>
+<title>Enterprise Installer</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
 body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    min-height: 100vh;
+    margin: 0;
+    background: #f2f2f7;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
+.container {
+    background: #ffffff;
     padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     width: 100%;
-    max-width: 700px;
+    max-width: 420px;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 h1 {
-    color: white;
-    margin-bottom: 10px;
     font-weight: 600;
-}
-
-.subtitle {
-    color: rgba(255,255,255,0.7);
+    font-size: 22px;
     margin-bottom: 30px;
-    font-size: 14px;
+    color: #1c1c1e;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
 .install-btn {
+    display: block;
     padding: 14px;
-    border-radius: 12px;
+    border-radius: 14px;
+    background: #007aff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    transition: all 0.2s ease;
-    box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+    font-size: 16px;
+    transition: 0.15s ease;
 }
 
-.install-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 114, 255, 0.6);
+.install-btn:active {
+    background: #005ecb;
+    transform: scale(0.98);
 }
 
 .footer {
     margin-top: 25px;
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
-}
-
-@media (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+    color: #8e8e93;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
-    <img class="logo" src="https://github.com/8ygh/ipa-files/releases/download/eeeee/icon.png" alt="Ronix Logo">
-
-    <h1>Ronix Enterprise Installer</h1>
-    <div class="subtitle">Official Installation Portal</div>
+<div class="container">
+    <h1>App Installation</h1>
 
     <div class="grid">
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Commission.plist">Install Commission</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Etisalat.plist">Install Etisalat</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Forevermark.plist">Install Forevermark</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/PowerChina.plist">Install PowerChina</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Qingdao.plist">Install Qingdao</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Railway.plist">Install Railway</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Takeoff.plist">Install Takeoff</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Telecom.plist">Install Telecom</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Tianjin.plist">Install Tianjin</a>
-        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Wasu.plist">Install Wasu</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Commission.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Etisalat.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Forevermark.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/PowerChina.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Qingdao.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Railway.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Takeoff.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Telecom.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Tianjin.plist">Install</a>
+        <a class="install-btn" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/8ygh/ipa-files/refs/heads/main/Wasu.plist">Install</a>
     </div>
 
     <div class="footer">
-        © 2026 Ronix Enterprise Distribution. Internal Use Only.
+        Internal Distribution
     </div>
 </div>
 
